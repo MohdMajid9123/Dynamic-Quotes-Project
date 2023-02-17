@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* main container div */
+.main_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c6382;
+}
+
+/* box div */
+
+.box {
+  width: 60vw;
+  background-color: #0a3d62;
+  text-align: center;
+  padding: 6rem;
+  box-shadow: 0 0.9rem 2rem #30ada9;
+  border-radius: 6rem 0 6rem 0;
+  color: #dff9fb;
+  border: 0.3rem dashed #f6b93b;
+}
+
+/* box h3 div */
+
+.box h3 {
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 5rem;
+}
+.box h3::first-letter {
+  text-transform: capitalize;
+}
+/* box h5 div */
+
+.box h5 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  text-align: right;
+}
+/* box under #btn div */
+
+.box #btn {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 1rem gray;
+  font-size: 1.8rem;
+}
+.box #btn:hover {
+  background-color: #e67e22;
+}
+
+/* media query only */
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 4rem;
+    width: 80vw;
+  }
+  .box h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .box h5 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    padding: 3rem;
+    width: 100vw;
+  }
+  .box h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .box h5 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .box h3 {
+    font-size: 1.7rem;
+  }
+  .box h5 {
+    font-size: 1.2rem;
+  }
+}
